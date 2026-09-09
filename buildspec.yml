@@ -1,0 +1,21 @@
+version: 0.2
+phase:
+  install:
+    runtime-versions:
+      nodejs: 24
+
+  pre-build:
+    commands:
+      - echo Installing dependencies...
+      - cd frontend-angular
+      - npm install
+
+  build:
+    commands:
+      - echo Building angular application...
+      - npm run build
+
+artifacts:
+  base-directory: frontend-angular/dist/angular-starter/browser
+  files:
+    - '**/*'
