@@ -15,8 +15,12 @@ phases:
     commands:
       - echo Building Angular application...
       - npm run build
+      - pwd
+      - ls -la
+      - ls -la dist/angular-starter
+      - ls -la dist/angular-starter/browser
 
 artifacts:
-  base-directory: dist/angular-starter/browser
+  base-directory: frontend-angular/dist/angular-starter/browser
   files:
     - '**/*'
