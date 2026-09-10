@@ -16,6 +16,6 @@ phase:
       - npm run build
 
 artifacts:
-  base-directory: dist/angular-starter
+  base-directory: dist/angular-starter/browser
   files:
     - '**/*'
